@@ -10,7 +10,7 @@ Projeto greenfield: apenas `README.md` e OpenSpec. Sem frameworks. Frontend HTML
 
 - Estrutura estática servível com rota `/p/<slug>` e um endpoint JSON por indivíduo.
 - Contrato de dados claro o suficiente para o frontend renderizar cabeçalho, fatos e evidências.
-- Interação de painel de evidências (abrir/fechar/próxima) só no cliente, sem navegação de página.
+- Interação do modal de evidências (abrir/fechar/próxima) só no cliente, sem navegação de página.
 - Dois indivíduos de exemplo para desenvolvimento e demonstração.
 
 **Non-Goals:**
@@ -44,10 +44,16 @@ Projeto greenfield: apenas `README.md` e OpenSpec. Sem frameworks. Frontend HTML
       "title": "Publicou livros",
       "evidences": [
         {
-          "title": "Livro X",
-          "url": "https://exemplo.org/livro-x",
-          "description": "Publicado em 2020.",
+          "title": "Reportagem no site de notícias",
+          "url": "https://www.bbc.com/portuguese",
+          "description": "Matéria que menciona o fato.",
           "date": "2020-03-15"
+        },
+        {
+          "title": "Vídeo no YouTube",
+          "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "description": "Registro em vídeo relacionado ao fato.",
+          "date": "2021-01-10"
         }
       ]
     }
@@ -59,11 +65,11 @@ Projeto greenfield: apenas `README.md` e OpenSpec. Sem frameworks. Frontend HTML
 - **Alternativa:** Lista de índices + N requests de fatos — rejeitada por complexidade desnecessária na v1.
 - **Implementação v1:** Handler HTTP mínimo (Node/`http` ou similar) lendo JSON de disco, **ou** arquivos estáticos em `/api/people/<slug>.json` com o servidor mapeando 404 — desde que o frontend use `fetch(..., { cache: "no-store" })` e trate status de erro.
 
-### 3. Painel de evidências no cliente
+### 3. Modal de evidências no cliente
 
-- **Escolha:** Uma região de painel/tabela abaixo ou junto à lista; só um fato aberto por vez. Clique na caixa abre; controle de fechar oculta; "Próxima" avança no índice da lista e, no último, apenas fecha.
-- **Rationale:** Atende abertura, troca e navegação sequencial sem mudar a URL.
-- **Alternativa:** Modal fullscreen — possível depois; painel inline é mais simples e testável.
+- **Escolha:** `<dialog>` modal com a tabela de evidências; só um fato aberto por vez. Clique na caixa abre o modal; Fechar / Escape / clique no backdrop fecha; "Próxima" avança no índice da lista e, no último, fecha o modal.
+- **Rationale:** Com dezenas de caixas, o modal mantém as evidências legíveis sem deslocar a grade.
+- **Alternativa:** Painel inline abaixo da linha da caixa — rejeitada para muitos fatos; o modal escala melhor.
 
 ### 4. Configuração de contato e exemplos
 
@@ -77,7 +83,7 @@ Projeto greenfield: apenas `README.md` e OpenSpec. Sem frameworks. Frontend HTML
   index.html          # opcional: landing ou redirect
   p/index.html        # shell da página do indivíduo (ou equivalente)
   css/styles.css
-  js/app.js           # roteamento, fetch, render, painel
+  js/app.js           # roteamento, fetch, render, modal
   js/config.js        # base URL da API, e-mail mailto
   api/                # dados ou servidor mínimo
   assets/people/      # fotos

@@ -1,0 +1,43 @@
+{
+  "slug": "pessoa-b",
+  "name": "Bruno Costa",
+  "photoUrl": "/assets/people/pessoa-b.svg",
+  "facts": [
+    {
+      "id": "fact-b1",
+      "title": "Fundou uma ONG",
+      "evidences": [
+        {
+          "title": "Perfil da ONG no UOL",
+          "url": "https://noticias.uol.com.br/",
+          "description": "Matéria sobre a criação da ONG Horizonte Aberto.",
+          "date": "2016-02-01"
+        },
+        {
+          "title": "Vídeo de apresentação da ONG",
+          "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+          "description": "Vídeo institucional publicado no canal da organização.",
+          "date": "2017-03-18"
+        }
+      ]
+    },
+    {
+      "id": "fact-b2",
+      "title": "Correu maratonas",
+      "evidences": [
+        {
+          "title": "Cobertura da Maratona de São Paulo 2023",
+          "url": "https://ge.globo.com/",
+          "description": "Reportagem com o tempo oficial de 3h42.",
+          "date": "2023-05-21"
+        },
+        {
+          "title": "Chegada em Berlim 2024",
+          "url": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+          "description": "Vídeo da chegada na Maratona de Berlim.",
+          "date": "2024-09-29"
+        }
+      ]
+    }
+  ]
+}

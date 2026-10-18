@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fatos e Evidências</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-brand">
+        <a class="brand-link" href="/">Fatos e Evidências</a>
+      </header>
+
+      <main id="main" class="main" aria-live="polite">
+        <p id="status" class="status" hidden></p>
+        <section id="person-header" class="person-header" hidden></section>
+        <section id="facts-section" class="facts-section" hidden>
+          <h2 class="facts-heading">Fatos</h2>
+          <div id="facts-grid" class="facts-grid" aria-label="Caixas de fatos"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>
+          Quer colaborar?
+          <a id="contact-link" href="mailto:colaborar@fatos-e-evidencias.example"
+            >Envie um e-mail</a
+          >.
+        </p>
+      </footer>
+    </div>
+
+    <dialog id="evidence-modal" class="evidence-modal" aria-labelledby="evidence-title">
+      <div class="evidence-modal__panel">
+        <div class="evidence-panel__toolbar">
+          <h3 id="evidence-title" class="evidence-panel__title"></h3>
+          <div class="evidence-panel__actions">
+            <button type="button" id="btn-next" class="btn">Próxima</button>
+            <button type="button" id="btn-close" class="btn btn--ghost">Fechar</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="evidence-table">
+            <thead>
+              <tr>
+                <th scope="col">Título</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Data</th>
+              </tr>
+            </thead>
+            <tbody id="evidence-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="/js/config.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

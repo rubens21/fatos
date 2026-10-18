@@ -1,0 +1,487 @@
+{
+  "slug": "pessoa-a",
+  "name": "Ana Ribeiro",
+  "photoUrl": "/assets/people/pessoa-a.svg",
+  "facts": [
+    {
+      "id": "fact-a1",
+      "title": "Publicou livros",
+      "evidences": [
+        {
+          "title": "Cobertura no Folha",
+          "url": "https://www1.folha.uol.com.br/",
+          "description": "Matéria relacionada a: Publicou livros.",
+          "date": "2015-01-01"
+        },
+        {
+          "title": "Vídeo sobre: Publicou livros",
+          "url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2018-04-04"
+        }
+      ]
+    },
+    {
+      "id": "fact-a2",
+      "title": "Sabe pilotar avião",
+      "evidences": [
+        {
+          "title": "Cobertura no G1",
+          "url": "https://g1.globo.com/",
+          "description": "Matéria relacionada a: Sabe pilotar avião.",
+          "date": "2016-02-02"
+        }
+      ]
+    },
+    {
+      "id": "fact-a3",
+      "title": "Participou de conferências internacionais",
+      "evidences": [
+        {
+          "title": "Cobertura no UOL",
+          "url": "https://noticias.uol.com.br/",
+          "description": "Matéria relacionada a: Participou de conferências internacionais.",
+          "date": "2017-03-03"
+        },
+        {
+          "title": "Vídeo sobre: Participou de conferências internacionais",
+          "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2020-06-06"
+        }
+      ]
+    },
+    {
+      "id": "fact-a4",
+      "title": "Falou em podcasts",
+      "evidences": [
+        {
+          "title": "Cobertura no BBC Brasil",
+          "url": "https://www.bbc.com/portuguese",
+          "description": "Matéria relacionada a: Falou em podcasts.",
+          "date": "2018-04-04"
+        }
+      ]
+    },
+    {
+      "id": "fact-a5",
+      "title": "Ministrou cursos online",
+      "evidences": [
+        {
+          "title": "Cobertura no Nexo",
+          "url": "https://www.nexojornal.com.br/",
+          "description": "Matéria relacionada a: Ministrou cursos online.",
+          "date": "2019-05-05"
+        },
+        {
+          "title": "Vídeo sobre: Ministrou cursos online",
+          "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2022-08-08"
+        }
+      ]
+    },
+    {
+      "id": "fact-a6",
+      "title": "Recebeu prêmio literário",
+      "evidences": [
+        {
+          "title": "Cobertura no Folha",
+          "url": "https://www1.folha.uol.com.br/",
+          "description": "Matéria relacionada a: Recebeu prêmio literário.",
+          "date": "2020-06-06"
+        }
+      ]
+    },
+    {
+      "id": "fact-a7",
+      "title": "Morou no exterior",
+      "evidences": [
+        {
+          "title": "Cobertura no G1",
+          "url": "https://g1.globo.com/",
+          "description": "Matéria relacionada a: Morou no exterior.",
+          "date": "2021-07-07"
+        },
+        {
+          "title": "Vídeo sobre: Morou no exterior",
+          "url": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2024-10-10"
+        }
+      ]
+    },
+    {
+      "id": "fact-a8",
+      "title": "Fala três idiomas",
+      "evidences": [
+        {
+          "title": "Cobertura no UOL",
+          "url": "https://noticias.uol.com.br/",
+          "description": "Matéria relacionada a: Fala três idiomas.",
+          "date": "2022-08-08"
+        }
+      ]
+    },
+    {
+      "id": "fact-a9",
+      "title": "Colaborou com jornais",
+      "evidences": [
+        {
+          "title": "Cobertura no BBC Brasil",
+          "url": "https://www.bbc.com/portuguese",
+          "description": "Matéria relacionada a: Colaborou com jornais.",
+          "date": "2023-09-09"
+        },
+        {
+          "title": "Vídeo sobre: Colaborou com jornais",
+          "url": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2016-12-12"
+        }
+      ]
+    },
+    {
+      "id": "fact-a10",
+      "title": "Apareceu em documentário",
+      "evidences": [
+        {
+          "title": "Cobertura no Nexo",
+          "url": "https://www.nexojornal.com.br/",
+          "description": "Matéria relacionada a: Apareceu em documentário.",
+          "date": "2024-10-10"
+        }
+      ]
+    },
+    {
+      "id": "fact-a11",
+      "title": "Fundou um clube de leitura",
+      "evidences": [
+        {
+          "title": "Cobertura no Folha",
+          "url": "https://www1.folha.uol.com.br/",
+          "description": "Matéria relacionada a: Fundou um clube de leitura.",
+          "date": "2015-11-11"
+        },
+        {
+          "title": "Vídeo sobre: Fundou um clube de leitura",
+          "url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2018-02-14"
+        }
+      ]
+    },
+    {
+      "id": "fact-a12",
+      "title": "Traduziu obras estrangeiras",
+      "evidences": [
+        {
+          "title": "Cobertura no G1",
+          "url": "https://g1.globo.com/",
+          "description": "Matéria relacionada a: Traduziu obras estrangeiras.",
+          "date": "2016-12-12"
+        }
+      ]
+    },
+    {
+      "id": "fact-a13",
+      "title": "Organizou festival cultural",
+      "evidences": [
+        {
+          "title": "Cobertura no UOL",
+          "url": "https://noticias.uol.com.br/",
+          "description": "Matéria relacionada a: Organizou festival cultural.",
+          "date": "2017-01-13"
+        },
+        {
+          "title": "Vídeo sobre: Organizou festival cultural",
+          "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2020-04-16"
+        }
+      ]
+    },
+    {
+      "id": "fact-a14",
+      "title": "Defendeu dissertação de mestrado",
+      "evidences": [
+        {
+          "title": "Cobertura no BBC Brasil",
+          "url": "https://www.bbc.com/portuguese",
+          "description": "Matéria relacionada a: Defendeu dissertação de mestrado.",
+          "date": "2018-02-14"
+        }
+      ]
+    },
+    {
+      "id": "fact-a15",
+      "title": "Concluiu doutorado",
+      "evidences": [
+        {
+          "title": "Cobertura no Nexo",
+          "url": "https://www.nexojornal.com.br/",
+          "description": "Matéria relacionada a: Concluiu doutorado.",
+          "date": "2019-03-15"
+        },
+        {
+          "title": "Vídeo sobre: Concluiu doutorado",
+          "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2022-06-18"
+        }
+      ]
+    },
+    {
+      "id": "fact-a16",
+      "title": "Trabalhou como professora universitária",
+      "evidences": [
+        {
+          "title": "Cobertura no Folha",
+          "url": "https://www1.folha.uol.com.br/",
+          "description": "Matéria relacionada a: Trabalhou como professora universitária.",
+          "date": "2020-04-16"
+        }
+      ]
+    },
+    {
+      "id": "fact-a17",
+      "title": "Escreveu crônicas semanais",
+      "evidences": [
+        {
+          "title": "Cobertura no G1",
+          "url": "https://g1.globo.com/",
+          "description": "Matéria relacionada a: Escreveu crônicas semanais.",
+          "date": "2021-05-17"
+        },
+        {
+          "title": "Vídeo sobre: Escreveu crônicas semanais",
+          "url": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2024-08-20"
+        }
+      ]
+    },
+    {
+      "id": "fact-a18",
+      "title": "Participou de feira do livro",
+      "evidences": [
+        {
+          "title": "Cobertura no UOL",
+          "url": "https://noticias.uol.com.br/",
+          "description": "Matéria relacionada a: Participou de feira do livro.",
+          "date": "2022-06-18"
+        }
+      ]
+    },
+    {
+      "id": "fact-a19",
+      "title": "Foi jurada de concurso",
+      "evidences": [
+        {
+          "title": "Cobertura no BBC Brasil",
+          "url": "https://www.bbc.com/portuguese",
+          "description": "Matéria relacionada a: Foi jurada de concurso.",
+          "date": "2023-07-19"
+        },
+        {
+          "title": "Vídeo sobre: Foi jurada de concurso",
+          "url": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2016-10-22"
+        }
+      ]
+    },
+    {
+      "id": "fact-a20",
+      "title": "Lançou audiolivro",
+      "evidences": [
+        {
+          "title": "Cobertura no Nexo",
+          "url": "https://www.nexojornal.com.br/",
+          "description": "Matéria relacionada a: Lançou audiolivro.",
+          "date": "2024-08-20"
+        }
+      ]
+    },
+    {
+      "id": "fact-a21",
+      "title": "Colaborou com ONG educacional",
+      "evidences": [
+        {
+          "title": "Cobertura no Folha",
+          "url": "https://www1.folha.uol.com.br/",
+          "description": "Matéria relacionada a: Colaborou com ONG educacional.",
+          "date": "2015-09-21"
+        },
+        {
+          "title": "Vídeo sobre: Colaborou com ONG educacional",
+          "url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2018-12-24"
+        }
+      ]
+    },
+    {
+      "id": "fact-a22",
+      "title": "Visitou escolas públicas",
+      "evidences": [
+        {
+          "title": "Cobertura no G1",
+          "url": "https://g1.globo.com/",
+          "description": "Matéria relacionada a: Visitou escolas públicas.",
+          "date": "2016-10-22"
+        }
+      ]
+    },
+    {
+      "id": "fact-a23",
+      "title": "Publicou artigo científico",
+      "evidences": [
+        {
+          "title": "Cobertura no UOL",
+          "url": "https://noticias.uol.com.br/",
+          "description": "Matéria relacionada a: Publicou artigo científico.",
+          "date": "2017-11-23"
+        },
+        {
+          "title": "Vídeo sobre: Publicou artigo científico",
+          "url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2020-02-26"
+        }
+      ]
+    },
+    {
+      "id": "fact-a24",
+      "title": "Deu entrevista na TV",
+      "evidences": [
+        {
+          "title": "Cobertura no BBC Brasil",
+          "url": "https://www.bbc.com/portuguese",
+          "description": "Matéria relacionada a: Deu entrevista na TV.",
+          "date": "2018-12-24"
+        }
+      ]
+    },
+    {
+      "id": "fact-a25",
+      "title": "Manteve newsletter mensal",
+      "evidences": [
+        {
+          "title": "Cobertura no Nexo",
+          "url": "https://www.nexojornal.com.br/",
+          "description": "Matéria relacionada a: Manteve newsletter mensal.",
+          "date": "2019-01-25"
+        },
+        {
+          "title": "Vídeo sobre: Manteve newsletter mensal",
+          "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2022-04-01"
+        }
+      ]
+    },
+    {
+      "id": "fact-a26",
+      "title": "Fotografou expedições",
+      "evidences": [
+        {
+          "title": "Cobertura no Folha",
+          "url": "https://www1.folha.uol.com.br/",
+          "description": "Matéria relacionada a: Fotografou expedições.",
+          "date": "2020-02-26"
+        }
+      ]
+    },
+    {
+      "id": "fact-a27",
+      "title": "Correu meia maratona",
+      "evidences": [
+        {
+          "title": "Cobertura no G1",
+          "url": "https://g1.globo.com/",
+          "description": "Matéria relacionada a: Correu meia maratona.",
+          "date": "2021-03-27"
+        },
+        {
+          "title": "Vídeo sobre: Correu meia maratona",
+          "url": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2024-06-03"
+        }
+      ]
+    },
+    {
+      "id": "fact-a28",
+      "title": "Aprendeu violão clássico",
+      "evidences": [
+        {
+          "title": "Cobertura no UOL",
+          "url": "https://noticias.uol.com.br/",
+          "description": "Matéria relacionada a: Aprendeu violão clássico.",
+          "date": "2022-04-01"
+        }
+      ]
+    },
+    {
+      "id": "fact-a29",
+      "title": "Coordenou residência artística",
+      "evidences": [
+        {
+          "title": "Cobertura no BBC Brasil",
+          "url": "https://www.bbc.com/portuguese",
+          "description": "Matéria relacionada a: Coordenou residência artística.",
+          "date": "2023-05-02"
+        },
+        {
+          "title": "Vídeo sobre: Coordenou residência artística",
+          "url": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2016-08-05"
+        }
+      ]
+    },
+    {
+      "id": "fact-a30",
+      "title": "Editou antologia coletiva",
+      "evidences": [
+        {
+          "title": "Cobertura no Nexo",
+          "url": "https://www.nexojornal.com.br/",
+          "description": "Matéria relacionada a: Editou antologia coletiva.",
+          "date": "2024-06-03"
+        }
+      ]
+    },
+    {
+      "id": "fact-a31",
+      "title": "Mentoreou escritores iniciantes",
+      "evidences": [
+        {
+          "title": "Cobertura no Folha",
+          "url": "https://www1.folha.uol.com.br/",
+          "description": "Matéria relacionada a: Mentoreou escritores iniciantes.",
+          "date": "2015-07-04"
+        },
+        {
+          "title": "Vídeo sobre: Mentoreou escritores iniciantes",
+          "url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+          "description": "Registro em vídeo no YouTube.",
+          "date": "2018-10-07"
+        }
+      ]
+    },
+    {
+      "id": "fact-a32",
+      "title": "Participou de mesa redonda no Sesc",
+      "evidences": [
+        {
+          "title": "Cobertura no G1",
+          "url": "https://g1.globo.com/",
+          "description": "Matéria relacionada a: Participou de mesa redonda no Sesc.",
+          "date": "2016-08-05"
+        }
+      ]
+    }
+  ]
+}

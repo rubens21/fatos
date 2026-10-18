@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fatos e Evidências</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="page page--home">
+      <header class="site-brand site-brand--hero">
+        <h1 class="brand-title">Fatos e Evidências</h1>
+        <p class="brand-tagline">Fatos verificáveis sobre indivíduos, com evidências à vista.</p>
+      </header>
+
+      <main class="main">
+        <nav class="home-nav" aria-label="Indivíduos">
+          <a class="home-card" href="/p/pessoa-a">Ana Ribeiro</a>
+          <a class="home-card" href="/p/pessoa-b">Bruno Costa</a>
+        </nav>
+      </main>
+
+      <footer class="site-footer">
+        <p>
+          Quer colaborar?
+          <a id="contact-link" href="mailto:colaborar@fatos-e-evidencias.example"
+            >Envie um e-mail</a
+          >.
+        </p>
+      </footer>
+    </div>
+
+    <script src="/js/config.js"></script>
+    <script>
+      (function () {
+        var link = document.getElementById("contact-link");
+        if (link && window.APP_CONFIG && window.APP_CONFIG.contactEmail) {
+          link.href = "mailto:" + window.APP_CONFIG.contactEmail;
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,351 @@
+:root {
+  --bg: #f3efe6;
+  --bg-accent: #e7dfd0;
+  --ink: #1c1a17;
+  --muted: #5c564c;
+  --panel: #fffdf8;
+  --line: #c9bfad;
+  --accent: #2f5d50;
+  --accent-soft: #d9efe6;
+  --danger: #8b2e2e;
+  --danger-bg: #f8e8e8;
+  --shadow: 0 12px 40px rgba(28, 26, 23, 0.08);
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(47, 93, 80, 0.12), transparent 40%),
+    linear-gradient(160deg, var(--bg) 0%, var(--bg-accent) 100%);
+}
+
+.page {
+  min-height: 100vh;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.site-brand {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.brand-link,
+.brand-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.brand-link {
+  font-size: 1.35rem;
+}
+
+.brand-title {
+  margin: 0;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+}
+
+.site-brand--hero {
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 2rem 0 1rem;
+}
+
+.brand-tagline {
+  margin: 0;
+  max-width: 28rem;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.main {
+  flex: 1;
+}
+
+.home-nav {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.home-card {
+  display: block;
+  padding: 1.5rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.home-card:hover,
+.home-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  outline: none;
+}
+
+.status {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.status--loading {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.status--error,
+.status--not-found {
+  border-color: #d7a0a0;
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+.person-header {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.25rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.person-header__photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  background: var(--bg-accent);
+}
+
+.person-header__name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  line-height: 1.15;
+}
+
+.facts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.facts-heading {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.fact-item {
+  display: flex;
+  min-width: 0;
+}
+
+.fact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 140px;
+  padding: 1.25rem 1rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 140ms ease, background 140ms ease, transform 140ms ease;
+}
+
+.fact-box__title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.fact-box:hover,
+.fact-box:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.fact-item.is-open .fact-box,
+.fact-box.is-open {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  border-width: 2px;
+}
+
+.evidence-modal {
+  padding: 0;
+  border: none;
+  background: transparent;
+  max-width: min(920px, calc(100vw - 2rem));
+  width: 100%;
+  color: inherit;
+}
+
+.evidence-modal::backdrop {
+  background: rgba(28, 26, 23, 0.55);
+}
+
+.evidence-modal__panel {
+  margin: 0;
+  padding: 1.15rem 1.25rem 1.25rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  box-shadow: 0 24px 60px rgba(28, 26, 23, 0.28);
+  max-height: min(80vh, 720px);
+  overflow: auto;
+}
+
+.evidence-panel__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.85rem;
+  position: sticky;
+  top: 0;
+  background: var(--panel);
+  padding-bottom: 0.35rem;
+  z-index: 1;
+}
+
+.evidence-panel__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+}
+
+.evidence-panel__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  padding: 0.45rem 0.85rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  filter: brightness(1.05);
+  outline: none;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.evidence-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.evidence-table th,
+.evidence-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 0.7rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.evidence-table th {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.evidence-table a {
+  color: var(--accent);
+}
+
+.site-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-footer a {
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .person-header {
+    grid-template-columns: 1fr;
+  }
+
+  .person-header__photo {
+    width: 112px;
+    height: 112px;
+  }
+
+  .facts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fact-box {
+    min-height: 120px;
+  }
+
+  .evidence-panel__toolbar {
+    align-items: flex-start;
+  }
+}
