@@ -3,43 +3,106 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b2a63" />
     <title>Fatos e Evidências</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <div class="page">
-      <header class="site-brand">
-        <a class="brand-link" href="/">Fatos e Evidências</a>
-      </header>
+    <header class="site-header">
+      <div class="topbar">
+        <div class="shell topbar__inner">
+          <span class="topbar__label">Fatos verificáveis · Fontes públicas</span>
+          <span class="topbar__note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 3l7 3v6c0 4.5-2.8 7.6-7 9-4.2-1.4-7-4.5-7-9V6l7-3z" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+            Conteúdo verificável
+          </span>
+        </div>
+      </div>
+      <div class="shell brand-row">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">Fatos e Evidências</span>
+            <span class="brand-tagline">Informação verificada, com fontes à vista</span>
+          </span>
+        </a>
+      </div>
+      <div class="flag-stripe" aria-hidden="true">
+        <span class="flag-stripe__verde"></span>
+        <span class="flag-stripe__amarelo"></span>
+        <span class="flag-stripe__azul"></span>
+      </div>
+    </header>
 
-      <main id="main" class="main" aria-live="polite">
-        <p id="status" class="status" hidden></p>
-        <section id="person-header" class="person-header" hidden></section>
-        <section id="facts-section" class="facts-section" hidden>
-          <h2 class="facts-heading">Fatos</h2>
-          <div id="facts-grid" class="facts-grid" aria-label="Caixas de fatos"></div>
-        </section>
-      </main>
+    <main id="main" class="shell page-main" aria-live="polite">
+      <p id="status" class="status" hidden></p>
 
-      <footer class="site-footer">
-        <p>
-          Quer colaborar?
-          <a id="contact-link" href="mailto:colaborar@fatos-e-evidencias.example"
-            >Envie um e-mail</a
-          >.
-        </p>
-      </footer>
-    </div>
+      <nav id="breadcrumb" class="breadcrumb" hidden aria-label="Trilha de navegação"></nav>
+
+      <section id="person-header" class="person-hero" hidden></section>
+
+      <section id="facts-section" class="facts-section" hidden>
+        <div class="facts-heading-row">
+          <h2 id="facts-heading" class="facts-heading">Fatos</h2>
+          <span class="facts-hint">Clique para ver as evidências</span>
+        </div>
+        <div id="facts-grid" class="facts-grid" aria-labelledby="facts-heading"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="flag-stripe" aria-hidden="true">
+        <span class="flag-stripe__verde"></span>
+        <span class="flag-stripe__amarelo"></span>
+        <span class="flag-stripe__azul"></span>
+      </div>
+      <div class="shell site-footer__grid">
+        <div>
+          <p class="site-footer__title">Fatos e Evidências</p>
+          <p>
+            Fatos verificáveis sobre indivíduos, sempre acompanhados das fontes públicas que os sustentam.
+          </p>
+        </div>
+        <div>
+          <p class="site-footer__kicker">Colaborar</p>
+          <p>
+            Quer contribuir com um fato ou uma fonte?
+            <a id="contact-link" href="mailto:colaborar@fatos-e-evidencias.example">Envie um e-mail</a>.
+          </p>
+        </div>
+      </div>
+      <div class="site-footer__bar">
+        <p class="shell site-footer__legal">Fatos e Evidências. Conteúdo de exemplo para demonstração.</p>
+      </div>
+    </footer>
 
     <dialog id="evidence-modal" class="evidence-modal" aria-labelledby="evidence-title">
+      <div class="evidence-modal__accent" aria-hidden="true"></div>
       <div class="evidence-modal__panel">
         <div class="evidence-panel__toolbar">
           <h3 id="evidence-title" class="evidence-panel__title"></h3>
+          <p id="evidence-count" class="evidence-panel__count"></p>
           <div class="evidence-panel__actions">
             <button type="button" id="btn-next" class="btn">Próxima</button>
             <button type="button" id="btn-close" class="btn btn--ghost">Fechar</button>
           </div>
         </div>
+        <button type="button" id="btn-close-icon" class="btn-close-icon" aria-label="Fechar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
         <div class="table-wrap">
           <table class="evidence-table">
             <thead>
